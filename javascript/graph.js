@@ -1,14 +1,6 @@
 
-// JSON to test if it works
-const test = [{
-    schifflange: 8155,
-    esch: 28228,
-    luxembourg: 76684,
-    petange: 7187,
-    bettembourg: 7427,
-    dudelange:18013
-    }
-];
+// Getting data from API server
+const test = JSON.parse(graph);
 
 // This and the following 5 functions return the value of the JSON objects
 // Number of return function depends on how many objects array has
