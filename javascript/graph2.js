@@ -1,6 +1,5 @@
-
 // Getting data from API server
-const test = JSON.parse(deadCode);
+const testTwo = JSON.parse(duplicates);
 
 // This and the following 5 functions return the value of the JSON objects
 // Number of return function depends on how many objects array has
@@ -17,19 +16,19 @@ function thirdValue(info) {
 }
 
 function forthValue(info) {
-    return info.projectAdead;
+    return info.projectAdup;
 }
 
 function fifthValue(info) {
-    return info.projectBdead;
+    return info.projectBdup;
 }
 
 function sixthValue(info) {
-    return info.projectCdead;
+    return info.projectCdup;
 }
 
 
-let myChart = document.getElementById('myChart').getContext('2d');
+let myChartTwo = document.getElementById('myChart2').getContext('2d');
 
 // Global options
 Chart.defaults.global.defaultFontFamily = 'Lato';
@@ -37,19 +36,19 @@ Chart.defaults.global.defaultFontSize = 18;
 Chart.defaults.global.defaultFontColor = '#777';
 
 
-let iChart = new Chart(myChart, {
+let iChartTwo = new Chart(myChartTwo, {
     type:'bar', //bar 
     data:{
         labels:['Project A', 'Project B', 'Project C'],
         datasets:[{
-            label:'Dead',
+            label:'Duplicates',
             data:[
 
                 // Getting values from JSON
-        
-                test.map(forthValue),
-                test.map(fifthValue),
-                test.map(sixthValue),
+
+                testTwo.map(forthValue),
+                testTwo.map(fifthValue),
+                testTwo.map(sixthValue),
                 
             ],
             //backgroundColor:'blue'
@@ -63,13 +62,13 @@ let iChart = new Chart(myChart, {
             hoverBorderWidth:3,
             hoverBorderColor:'#000'
         },{
-            label:'Executed',
+            label:'Once',
             data:[
 
                 // Getting values from JSON
-                test.map(firstValue),
-                test.map(secondValue),
-                test.map(thirdValue),
+                testTwo.map(firstValue),
+                testTwo.map(secondValue),
+                testTwo.map(thirdValue),
                 
             ],
             //backgroundColor:'blue'
@@ -82,7 +81,8 @@ let iChart = new Chart(myChart, {
             borderColor:'#777',
             hoverBorderWidth:3,
             hoverBorderColor:'#000'
-        }]
+        }
+    ]
     },
     options:{
         // can change properties of the title
@@ -92,7 +92,7 @@ let iChart = new Chart(myChart, {
         },
         title:{
             display:true,
-            text:'Lines of Code -  Dead Code',
+            text:'Lines of Code - Duplicated',
             fontSize:25,
         },
         legend:{

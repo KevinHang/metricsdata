@@ -49,3 +49,34 @@ body {
     justify-content: space-between;
 }
 
+#status {
+    text-align: center;
+    font-weight: bold;
+}
+
+#serverOff {
+    color: red;
+    display: inline;
+}
+
+#serverOn {
+    color: green;
+    display: inline;
+}
+
+#summary {
+    display: inline;
+    border: 1px solid lightskyblue;
+    padding: 15px;
+    position:relative;
+    top: 80px;
+    left: 150px;
+    background-color: lime;
+}
+
+#shortSummary {
+    position: relative;
+    left: -120px;
+}
+
+
