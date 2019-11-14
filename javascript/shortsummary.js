@@ -1,3 +1,5 @@
+// file that fills summary page with information
+
 const summary = JSON.parse(shortSummary);
 
 function lines(info) {

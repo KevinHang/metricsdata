@@ -64,19 +64,4 @@ body {
     display: inline;
 }
 
-#summary {
-    display: inline;
-    border: 1px solid lightskyblue;
-    padding: 15px;
-    position:relative;
-    top: 80px;
-    left: 150px;
-    background-color: lime;
-}
-
-#shortSummary {
-    position: relative;
-    left: -120px;
-}
-
 

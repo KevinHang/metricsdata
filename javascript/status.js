@@ -1,3 +1,4 @@
+// this function checks whether the server is online and what to display
 function statusOf(status) {
     if (!status) {
         return "Server: <p id='serverOff'>Offline</p>"

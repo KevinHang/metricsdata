@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Clones</title>
+    <title>Violations</title>
     <link rel="stylesheet" href="../css/text.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
@@ -14,7 +14,7 @@
     <!--Shows if server is online-->
     <div id="status"></div>
 
-    <h3 class="container mb-1 mt-1">Clones<h3>
+    <h3 class="container mb-1 mt-1">Violations<h3>
     <h6 class="container mb-1 mt-1"></h6>
 
     <div id="table" class="container mb-3 mt-3">Server offline. Unable to fetch data.</div>
@@ -45,10 +45,9 @@
     } );
     </script>
 
-
-    <script type="text/javascript" src="http://localhost:8080/api/clones.json"></script>
+    <script type="text/javascript" src="http://localhost:8080/api/data.json"></script>
     <script type="text/javascript" src="http://localhost:8080/api/status.js"></script>
     <script src="../javascript/status.js"></script>
-    <script src="../javascript/clones.js"></script>
+    <script src="../javascript/violations.js"></script>
 </body>
 </html>
