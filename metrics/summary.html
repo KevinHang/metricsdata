@@ -7,12 +7,49 @@
     <link rel="stylesheet" href="../css/text.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
     <title>Summary</title>
 </head>
 <body>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">Metrics Interface</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../metrics/summary.html">Summary <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../metrics/deadcode.html">Dead Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../metrics/clones.html">Clones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../metrics/violations.html">Violations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../metrics/documentation.html">Documentation</a>
+                </li>
+
+            </ul>
+            <button class="btn btn-outline-success my-2 my-sm-0" value="Refresh Page" onClick="window.location.reload();">Reload</button>
+        </div>
+    </nav>
+
     <!--Shows if server is online-->
     <div id="status"></div>
+
+    <h3 class="container mb-1 mt-1">Summary<h3>
+    <h6 class="container mb-1 mt-1"></h6>
     
     <div class="container-fluid">
         <div class="row">
@@ -26,11 +63,6 @@
             <div class="col-lg-6"><canvas id="myChart3"></canvas></div>
             <div class="col-lg-6"><canvas id="myChart2"></canvas></div>
         </div>
-    </div>
-
-    <div style="text-align:center">
-        <button value="Refresh Page" onClick="window.location.reload();">Reload</button>
-        <button><a href="../index.html" id="back">Back</a></button>
     </div>
 
     <script type="text/javascript" src="http://localhost:8080/api/summary.json"></script>
