@@ -13,7 +13,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="startTime()">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="../index.html">Metrics Interface</a>
@@ -40,12 +40,12 @@
                 </li>
 
             </ul>
+            <div id="time"></div>
+            <!--Shows if server is online-->
+            <div id="status"></div>
             <button class="btn btn-outline-success my-2 my-sm-0" value="Refresh Page" onClick="window.location.reload();">Reload</button>
         </div>
     </nav>
-
-    <!--Shows if server is online-->
-    <div id="status"></div>
 
     <h3 class="container mb-1 mt-1">Dead Code<h3>
     <h6 class="container mb-1 mt-1"></h6>
@@ -78,5 +78,6 @@
     <script type="text/javascript" src="http://localhost:8080/api/status.js"></script>
     <script src="../javascript/status.js"></script>
     <script src="../javascript/deadcode.js"></script>
+    <script src="../javascript/timedate.js"></script>
 </body>
 </html>

@@ -17,7 +17,6 @@
 
         <ul>
             <li><a href="metrics/summary.html">Summary</a></li>
-            <!-- <li><a href="metrics/dictionary.html">TableV1</a></li> -->
             <li><a href="metrics/deadcode.html">Dead code</a></li>
             <li><a href="metrics/clones.html">Clones</a></li>
             <li><a href="metrics/violations.html">Violations</a></li>
@@ -25,9 +24,14 @@
         </ul>
 
     </div>
+
+    <!-- Displays if the server is online -->
     <div id="status"></div>
 
+    <!-- Requests from server if server is online -->
+    <!-- If a certain file named "status.js" is present, then it will display the status as online -->
     <script type="text/javascript" src="http://localhost:8080/api/status.js"></script>
+    
     <script src="javascript/status.js"></script>
 
 </body>

@@ -7,16 +7,19 @@ body {
 #status {
     text-align: center;
     font-weight: bold;
+    margin-right: 10px;
+}
+
+#time {
+    padding-right: 10px;
 }
 
 #serverOff {
     color: red;
-    display: inline;
 }
 
 #serverOn {
     color: green;
-    display: inline;
 }
 
 #summary {
@@ -34,12 +37,19 @@ body {
     left: -120px;
 }
 
-p {
-    font-family: 'Poppins', sans-serif;
+#para {
+    font-weight: bold;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 20px;
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+}
+
+#list {
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 a,
@@ -48,10 +58,4 @@ a:focus {
     color: inherit;
     text-decoration: none;
     transition: all 0.3s;
-}
-
-#para {
-    font-weight: bold;
-    margin: 10px;
-    border: 1px solid black;
 }
