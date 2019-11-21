@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/text.css">
+    <link rel="stylesheet" href="../css/mainstyle.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
    
@@ -14,7 +14,8 @@
 
     <title>Summary</title>
 </head>
-<!-- Loads time and date on load -->
+
+<!-- Loads time and date onload -->
 <body onload="startTime()">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -44,9 +45,12 @@
                 </li>
 
             </ul>
+            <!-- Shows the local time and date -->
             <div id="time"></div>
+            <!-- Shows if server is online -->
             <div id="status"></div>
-            <button class="btn btn-outline-success my-2 my-sm-0" value="Refresh Page" onClick="window.location.reload();">Reload</button>
+            <!-- Reload page button -->
+            <button title="Reload page" class="btn btn-outline-success my-2 my-sm-0" value="Refresh Page" onClick="window.location.reload();">Reload</button>
         </div>
     </nav>
 
@@ -79,6 +83,7 @@
     <script type="text/javascript" src="http://localhost:8080/api/summary.json"></script>
     <script type="text/javascript" src="http://localhost:8080/api/status.js"></script>
     <script src="../javascript/status.js"></script>
+    <script src="../javascript/ifOn.js"></script>
     <script src="../javascript/graph.js"></script>
     <script src="../javascript/graph2.js"></script>
     <script src="../javascript/graph3.js"></script>

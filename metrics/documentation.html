@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/text.css">
+    <link rel="stylesheet" href="../css/mainstyle.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
 
@@ -13,8 +13,11 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
     <title>Documentation</title>
 </head>
+
+<!-- Loads time and date function onload -->
 <body onload="startTime()">
 
+    <!-- fixed navigation bar on top of the page -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="../index.html">Metrics Interface</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,9 +43,12 @@
                 </li>
 
             </ul>
+            <!-- Shows the local time and date -->
             <div id="time"></div>
+            <!-- Shows if server is online -->
             <div id="status"></div>
-            <button class="btn btn-outline-success my-2 my-sm-0" value="Refresh Page" onClick="window.location.reload();">Reload</button>
+            <!-- Reload page button -->
+            <button title="Reload page" class="btn btn-outline-success my-2 my-sm-0" value="Refresh Page" onClick="window.location.reload();">Reload</button>
         </div>
     </nav>
 
@@ -54,10 +60,6 @@
             <li>Type 3: Similar to Typ 2 clones, but do not take into account "Logging" steps. Therefore, these clones perform the same actions but might vary in the logging messages.</li>
             <li>Type 4: Keywords performing an identical sequence of actions (calling the same library keywords in the same order), regardless of the User Keywords used to do so.</li>
         </ul> 
-    </div>
-
-    <div style="text-align:center">
-        <button><a href="../index.html" id="back">Back</a></button>
     </div>
 
 

@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dead Code</title>
-    <link rel="stylesheet" href="../css/text.css">
+    <link rel="stylesheet" href="../css/mainstyle.css">
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
 
@@ -13,8 +15,11 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 </head>
+
+<!-- Loads time and date function onload -->
 <body onload="startTime()">
 
+    <!-- fixed navigation bar on top of the page -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="../index.html">Metrics Interface</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,16 +45,19 @@
                 </li>
 
             </ul>
+            <!-- Shows time and date -->
             <div id="time"></div>
-            <!--Shows if server is online-->
+            <!-- Shows if server is online -->
             <div id="status"></div>
-            <button class="btn btn-outline-success my-2 my-sm-0" value="Refresh Page" onClick="window.location.reload();">Reload</button>
+            <!-- Reload page button -->
+            <button title="Reload page" class="btn btn-outline-success my-2 my-sm-0" value="Refresh Page" onClick="window.location.reload();">Reload</button>
         </div>
     </nav>
 
     <h3 class="container mb-1 mt-1">Dead Code<h3>
     <h6 class="container mb-1 mt-1"></h6>
 
+    <!-- Content will be replaced once server is online -->
     <div id="table" class="container mb-3 mt-3">Server offline. Unable to fetch data.</div>
 
 

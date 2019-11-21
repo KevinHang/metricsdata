@@ -1,3 +1,4 @@
+// function that gets the local time and date
 function startTime() {
     var today = new Date();
     var h = today.getHours();

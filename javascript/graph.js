@@ -40,6 +40,7 @@ Chart.defaults.global.defaultFontColor = '#777';
 let iChart = new Chart(myChart, {
     type:'bar', //bar 
     data:{
+        // name of the different bars
         labels:['Project A', 'Project B', 'Project C'],
         datasets:[{
             label:'Dead',

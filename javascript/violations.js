@@ -37,7 +37,7 @@ function convert2table(json) {
            headfoot + '</tr></tfoot></table>';
   }
   
-  document.getElementById('table').innerHTML = convert2table(metricsData);
+document.getElementById('table').innerHTML = convert2table(metricsData);
 
 
   

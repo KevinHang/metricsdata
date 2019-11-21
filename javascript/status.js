@@ -7,13 +7,4 @@ function statusOf(status) {
     }
 }
 
-function ifOn(status) {
-    if (!status) {
-        return "Server offline. Unable to fetch data."
-    } else {
-        return ""
-    }
-}
-
 document.getElementById('status').innerHTML = statusOf(status);
-document.getElementById('isOn').innerHTML = ifOn(status)
